@@ -104,3 +104,10 @@ label:hover, .back-btn:hover  {
 .btn:hover {
     background-color: #13970a;
 }
+
+.blue {
+    background-color: cadetblue;
+}
+.blue:hover {
+    background-color: rgb(56, 100, 102);
+}
