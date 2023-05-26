@@ -9,6 +9,16 @@
 
 [![Demonstration Screenshot][demonstration-screenshot]](#)
 
+**🆕 NEW**: *CargoScan* Web App Edition: `app.py` ~ just clone and run:
+
+[![Demon Screen][demonstration-screenshot-1]](#)
+
+[![Demon Screen][demonstration-screenshot-2]](#)
+
+[![Demon Screen][demonstration-screenshot-3]](#)
+
+----
+
 ### 👩‍🏭 Steps
 1. **Data Collection;**
 2. **Data Preprocessing;**
@@ -63,5 +73,8 @@
 [issues-shield]: https://img.shields.io/github/issues/silvermete0r/CargoScan.svg?style=flat-square
 [issues-url]: https://github.com/silvermete0r/CargoScan/issues
 [demonstration-screenshot]: https://sun9-80.userapi.com/impg/b30lzz6uKJUw50O8EfH5EUT6-LdIxPD4zKHxNw/SgfP3u7DWi0.jpg?size=1443x811&quality=95&sign=977b2b2316a246a3cabbde3f0fe3378c&type=album
+[demonstration-screenshot-1]: https://sun9-73.userapi.com/impg/i28f7cm4D2xlgYAvxPs2EYPbKhcTkoVd2VcseQ/dQZOWYNR3Jw.jpg?size=1335x1165&quality=95&sign=e8d44895da12f6ffd10afddd3c75f2a7&type=album
+[demonstration-screenshot-2]: https://sun9-62.userapi.com/impg/nlbHlnb-40sWJLmc3AhzadwOh0_A4Xa7buFePA/Sh1nKKZxxbI.jpg?size=1335x522&quality=95&sign=f6cdcfd533e68857e41feb48f64f512f&type=album
+[demonstration-screenshot-3]: https://sun9-80.userapi.com/impg/LnZ6nuHlX5Chhyilb6z4XPbZHmD3rcUDFRIa3Q/OGqHOYGc2Yo.jpg?size=1338x534&quality=95&sign=012b743f4bb110a6d19a0e8f1d0f7747&type=album
 [data-1]: https://sun9-7.userapi.com/impg/BUsUKZQ_TcXPrG_gU3L9kVzHo3OiAEQQdNXdXA/nZy6fIu4NKk.jpg?size=1693x478&quality=95&sign=25add4bc81a147440512ff90dd54b895&type=album
 [data-2]: https://sun9-64.userapi.com/impg/rmY_egki5ONYSSW6_MO_TCPUuSGCwqjotmFgtg/oxZV67HyxQM.jpg?size=1234x910&quality=95&sign=c241b73c00574ff1f0f1ebb9b13855d8&type=album
