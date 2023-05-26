@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CargoScan AI</title>
+    <link rel="icon" href="../static/imgs/train.png">
+
+    <!-- FontAwesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- External Stylsheet -->
+    <link rel="stylesheet" href="../static/style.css">
+
+    <!-- Internal Styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .back-btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Records Table</h1>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Wagon ID</th>
+                <th>Datetime</th>
+            </tr>
+            {% for record in records %}
+            <tr>
+                <td>{{ record['id'] }}</td>
+                <td>{{ record['wagon_id'] }}</td>
+                <td class="datetime">{{ record['datetime'] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        
+        <form action="/" method="get">
+            <button type="submit" class="back-btn">
+                <i class="fa fa-backward"></i> &nbsp;
+                Back to Home
+            </button>
+        </form>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var datetimeCells = document.getElementsByClassName('datetime');
+            for (var i = 0; i < datetimeCells.length; i++) {
+                var datetimeStr = datetimeCells[i].textContent;
+                var datetimeParts = datetimeStr.split('/');
+                var month = datetimeParts[0];
+                var day = datetimeParts[1];
+                var year = datetimeParts[4].substring(0, 4);
+                var timeParts = datetimeParts[5].split(':');
+                var hours = datetimeParts[4].substring(4, 2);
+                var minutes = timeParts[1];
+                var formattedDatetime = month + '.' + day + '.' + year + ' - ' + hours.padStart(2, '0') + ':' + minutes;
+                datetimeCells[i].textContent = formattedDatetime;
+            }
+        });
+    </script>
+</body>
+</html>

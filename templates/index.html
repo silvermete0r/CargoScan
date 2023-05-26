@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CargoScan AI</title>
+    <link rel="icon" href="../static/imgs/train.png">
+
+    <!-- FontAwesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Stylsheet -->
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>    
+    <form class="container" id="upload-form" enctype="multipart/form-data" action="/process" method="POST">
+        <h1>CargoScan AI Web App</h1>
+        <figure class="image-container">
+            <img id="chosen-image">
+            <figcaption id="file-name">
+                Demo File Name
+            </figcaption>
+        </figure>
+        <input type="file" id="upload-button" accept="image/*" name="image">
+        <label for="upload-button">
+            <i class="fa fa-upload"></i> &nbsp;
+            Choose a photo
+        </label>
+
+        <button type="submit" id="submit" class="btn">
+            <i class="fa fa-check"></i> &nbsp;
+            Process
+        </button>
+    </form>
+    <!-- JS Script -->
+    <script src="../static/script.js"></script>
+</body>
+</html>

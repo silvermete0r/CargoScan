@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="icon" href="../static/imgs/train.png">
+
+    <!-- FontAwesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Stylsheet -->
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename=filename) }}" alt="Processed Image">
+    
+        <h2>🎯 Accuracy Score: {{ accuracy_score }}</h2>
+        <h2>#️⃣ Number ID: {{ number_id }}</h2>
+        
+        <form action="/" method="get">
+            <button type="submit" class="back-btn">
+                <i class="fa fa-backward"></i> &nbsp;
+                Back to Home
+            </button>
+        </form>
+    </div>
+</body>
+</html>
