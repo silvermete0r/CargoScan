@@ -81,7 +81,7 @@
                 var timeParts = datetimeParts[5].split(':');
                 var hours = datetimeParts[4].substring(4, 2);
                 var minutes = timeParts[1];
-                var formattedDatetime = month + '.' + day + '.' + year + ' - ' + hours.padStart(2, '0') + ':' + minutes;
+                var formattedDatetime = day + '.' + month + '.' + year + ' - ' + hours.padStart(2, '0') + ':' + minutes;
                 datetimeCells[i].textContent = formattedDatetime;
             }
         });
